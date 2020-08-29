@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var object = {
+            ho: "Nguyen",
+            ten: "Van A",
+            age: 20,
+            tenDayDu: function(){
+                return this.ho + " " + this.ten;
+            },
+            nguoiThan: {
+                ho: ""
+            },
+            "ho-ten": "Nguyen Van A"
+        };
+
+        console.log("object =", object);
+
+        // Truy xuat du lieu
+        console.log("ho =", object.ho);
+        console.log("ten =", object.ten);
+        console.log("age =", object.age);
+        object.ten = "Van B";
+        console.log("ten =", object.ten);
+        console.log("tenDayDu =", object.tenDayDu());
+
+         // Cu phap khac
+         console.log("Ho ten: ", object["ho-ten"])
+         console.log("ho =", object["ho"]);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

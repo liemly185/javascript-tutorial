@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a = 3;
+        var b = 4;
+
+        function calculate(a, b){
+            var c = a * a + b * b;
+            console.log(c);
+        }
+
+        var c = calculate(a, b);
+        console.log("c =", c);
+
+        // console.log("d =", d);
+
+        // var c = a * a + b * b;
+
+        // console.log(c);
+
+        function name(){
+            return "Nguyen Van A";
+        }
+
+        console.log("length =", name().length);
+
+        var t = "Outside";
+
+        function scope(){
+            var t = "Hello world";
+            console.log("scope t =", t);
+        }
+
+        console.log("t =", t);
+
+        scope();
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

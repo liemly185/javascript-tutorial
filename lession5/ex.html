@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 1. Tính giá trị trung bình của 2 số
+        // 2 3 => (2 + 3) / 2 = 2.5
+        function trungBinh(a, b){
+            return (a + b) / 2;
+        }
+
+        var tb = trungBinh(10 ,20);
+        console.log("tb =", tb);
+
+        // 2. Tính giá trị trung bình của n số
+        function trungBinhNSo(...array){
+            var sum = 0;
+
+            array.forEach(function(value){
+                sum += value;
+            });
+
+            return sum / array.length;
+            //console.log("array =", array);
+        }
+        var tbNSo = trungBinhNSo(1,2,3);
+        console.log("tbNSo =", tbNSo);
+
+        // 3. Tính giá trị lập phương của 2 số
+        function lapPhuong(a, b){
+            return a * a * a + b * b * b;
+        }
+        var lp = lapPhuong(2, 3); // 8 + 27 = 35
+        console.log("lp =", lp);
+
+        // 4. Tính giá trị lập phương của n số
+
+        // 5. Cộng giá trị 2 chuỗi lại
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
