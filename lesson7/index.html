@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+        // String
+
+        // Khai bao String voi dau ""
+        var str1 = "Hello \"String\" World";
+        console.log("str1 =", str1);
+
+        // Khai bao String voi dau ''
+        var str2 = 'Hello "String"  World';
+        console.log("str2 =", str2);
+
+        // Khai bao String voi dau ``
+        var temp = "String";
+        var str3 = `Hello "${temp}" World`; // Template String
+        console.log("str3 =", str3);
+
+        // Cac ham cua String
+
+        // Ham length: tra ve do dai cua string
+        console.log("length =", str1.length);
+
+        // Ham indexOf: tra ve vi tri cua chuoi can tim
+        var pos = str1.indexOf("World");
+        console.log("pos =", pos);
+        console.log("charAt =", str1.charAt(pos));
+
+        // Ham slice, substring, substr
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+        console.log("slice =", res);
+
+        res = str.substring(7, 13);
+        console.log("substring =", res);
+
+        res = str.substr(7, 6); 
+        console.log("substr =", res);
+
+        // Ham replace
+        str = str.replace("Banana", "Chuoi");
+        console.log("replace=", str);
+        str = str.replace(/Chuoi/, "ChuoiNguyenNay"); // RegExp = Regular Expression
+        console.log("replace=", str);
+
+        // Ham toUpperCase
+        res = str.toUpperCase()
+        console.log("toUpperCase=", res);
+
+        // Ham toLowerCase
+        res = str.toLowerCase();
+        console.log("toLowerCase=", res);
+
+        // Ham concat: Noi chuoi lai
+        var text1 = "Hello";
+        var text2 = "World";
+        var text3 = text1.concat(" ", text2);
+        console.log("text3=", text3);
+
+        // Ham trim
+        var str = "       Hello World        ";
+        res = str.trim();
+        console.log("trim =", res)
+
+        // Ham split
+        var str = "a,b,c,d,e";
+        var arr = str.split(',');
+        console.log("split =", arr);
+
+        var str = "abcde";
+        var arr = str.split("");
+        console.log("split =", arr);
+
+    </script>
+</head>
+
+<body></body>
+
+</html>
