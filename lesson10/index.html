@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Array Iteration: Vòng lặp mảng
+
+        var cars = ["Tesla", "BMW", "Ferrari", "Ford", "Porsche"];
+        console.log(cars);
+
+        // Cach 1:
+        for (var i = 0; i < cars.length; i ++) {
+            console.log(i, cars[i]);
+        }
+
+        // Cach 2:
+        for (var i in cars) { // i la index
+            console.log(i, cars[i]);
+        }
+
+        // Cach 3:
+        for (var car of cars) {
+            console.log(car);
+        }
+
+        // Cach 4:
+        cars.forEach(function (car, i, it) { // di qua tung cai
+            // it == cars
+            console.log(i, car);
+        })
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

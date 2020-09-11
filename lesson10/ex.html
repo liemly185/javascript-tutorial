@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //         Cho mảng [1,2,3,4,5,6,7,8,9,10]:
+        // 1. Tỉnh tổng của mảng này => kq: 55
+        // 2. Tính giá trị trung bình cộng của mảng này => kq: 5.5
+        // 3. Tỉnh tổng bình phương của từng phần tử => kq: 385
+
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+
+        // Ex1:
+        var ex1 = 0;
+        for (var i = 0; i < arr.length; i++){
+            ex1 += arr[i];
+        }
+
+        console.log("Ket qua bai tap 1 =", ex1);
+
+        // Ex2:
+        // (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10) / 10
+        var ex2 = ex1 / arr.length;
+        
+        console.log("Ket qua bai tap 2 =", ex2);
+
+        // Ex3:
+        var ex3 = 0;
+        for (var i in arr){
+            //ex3 += arr[i] * arr[i]; // => 385
+            ex3 += Math.pow(arr[i], 2);
+        }
+
+        console.log("Ket qua bai tap 3 =", ex3);
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
