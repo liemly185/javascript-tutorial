@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Array Part 1
+        var cars = ["Saab", "Volvo", "BMW"]; // Khoi tao du lieu mang
+        console.log(cars);
+
+        console.log("cars[0] =", cars[0]);
+        console.log("cars[1] =", cars[1]);
+        console.log("cars[2] =", cars[2]);
+        cars[2] = "New Car";
+        console.log(cars);
+
+        // Ham length
+        console.log("cars length =", cars.length); // Tra ve do dai cua 1 mang
+
+        // Ham push: them phan tu moi vao cuoi mang
+        cars.push("Bentley");
+        console.log("push. cars =", cars);
+
+        // Ham pop: xoa phan tu o cuoi mang
+        cars.pop();
+        console.log("pop. cars =", cars);
+
+        // Ham unshift
+        cars.unshift("Bentley")
+        console.log("unshift. cars =", cars);
+
+        // Ham shift
+        cars.shift()
+        console.log("shift. cars =", cars);
+
+        // Ham toString
+        console.log("cars.toString() =", cars.toString()) // chuyen du lieu mang thanh ky tu
+
+        // Ham join
+        console.log("cars.join() =", cars.join("***"))
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

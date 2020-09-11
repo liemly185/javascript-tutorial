@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // Array Part 2
+
+        // Ham splice    0         1         2        3
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits);
+
+        fruits.splice(2, 1); // xoa cac phan trong 1 mang
+
+        console.log(fruits);
+
+        var newFruits = ["Lemon", "Kiwi"];
+
+        // Ham concat: lien ket mot hoac nhieu moi lai
+        var temp = fruits.concat(newFruits); // tao ra mot mang tam moi
+        console.log("temp =", temp); 
+
+        // Ham slice: cat mot mang ra tao thanh mot mang moi
+        //            0        1         2         3
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits = fruits.slice(2);
+        console.log("slice =", fruits);
+
+        // Ham reverse
+        //            0        1         2         3
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.reverse(); // Dao chieu cua 1 mang
+        console.log("reverse =", fruits);
+
+        // Ket hop
+
+        var str = fruits.join("-");  // Chuyen thanh chuoi
+        console.log("join =", str);
+
+
+        console.log ("split =", str.split("-")); // Chuoi ve mang
+
+        // Khai bao
+        var arr = [0 ,1 ,2, 3, "Mot", "Hai", "Ba", {name: "Nguyen Van A"}];
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
